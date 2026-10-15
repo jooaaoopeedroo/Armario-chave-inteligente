@@ -1,5 +1,10 @@
 hora_atual = 22
 
+
+
+def bloquear_fechadura():
+    print("Fechadura Bloqueada")
+
 # Verificar horário comercial
 if hora_atual >= 22 or hora_atual < 5:
     print("Acesso Negado: Fora do horário comercial.")
@@ -16,3 +21,4 @@ elif nicho_ocupado:
 # Liberar chave se todas as condições forem atendidas
 else:
     liberar_chave()
+
