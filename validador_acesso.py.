@@ -1,0 +1,34 @@
+def rejeitar(motivo):
+    print("Acesso Negado:", motivo)
+
+
+def bloquear_fechadura():
+    print("Fechadura bloqueada")
+
+
+def liberar_chave():
+    print("Chave do Lab 03 Liberada.")
+
+
+# Dadosdocente
+docente_requisitante = {
+    "nome": "Prof. Silva",
+    "ativo": True,
+    "id_cracha": 1045,
+    "admin": False
+}
+ocente_ativo = docente_requisitante["ativo"]
+hora_atual = 14
+nicho_ocupado = False
+
+# Funil de decião
+if not docente_ativo:
+    rejeitar("Cadastro Inativo")
+elif hora_atual >= 23 or hora_atual < 5:
+    print("Acesso Negado: Fora do horário comercial.")
+    bloquear_fechadura()
+    rejeitar("Trava Noturna")
+elif nicho_ocupado:
+    rejeitar("Chave Indisponível")
+else:
+    liberar_chave()
