@@ -1,7 +1,7 @@
 # core/regras_acesso.py
 
 def validar_permissao_retirada(id_cracha: str, horario: int, docente_ativo: bool) -> dict:
-    """Verifica as regras de acesso e retorna o status."""
+    """Verifica as regras de acesso eretornao status."""
 
     if not docente_ativo:
         return {"autorizado": False, "motivo": "403_INATIVO", "mensagem": "Cadastro Inativo"}
