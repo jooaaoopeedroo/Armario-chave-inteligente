@@ -1,27 +1,30 @@
 def rejeitar(motivo):
+    """Mostra a mensagem de acesso negado com o motivo."""
     print("Acesso Negado:", motivo)
 
 
 def bloquear_fechadura():
+    """Informa que a fechadura foi bloqueada."""
     print("Fechadura bloqueada")
 
 
 def liberar_chave():
+    """Informa que a chave do Lab 03 foi liberada."""
     print("Chave do Lab 03 Liberada.")
 
 
-# Dadosdocente
+# Dados do docente
 docente_requisitante = {
     "nome": "Prof. Silva",
     "ativo": True,
     "id_cracha": 1045,
     "admin": False
 }
-ocente_ativo = docente_requisitante["ativo"]
+docente_ativo = docente_requisitante["ativo"]
 hora_atual = 14
 nicho_ocupado = False
 
-# Funil de decião
+# Funil de decisão
 if not docente_ativo:
     rejeitar("Cadastro Inativo")
 elif hora_atual >= 23 or hora_atual < 5:
