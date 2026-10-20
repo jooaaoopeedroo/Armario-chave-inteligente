@@ -18,7 +18,7 @@ docente_requisitante = {
     "nome": "Prof. Silva",
     "ativo": True,
     "id_cracha": 1045,
-    "admin": False
+    "admin": False,
 }
 docente_ativo = docente_requisitante["ativo"]
 hora_atual = 14
