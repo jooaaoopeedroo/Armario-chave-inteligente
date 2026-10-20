@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import JsonResponse
 
-# Create your views here.
+
+def status_api(request):
+    """Informa ao armário se o servidor está online."""
+    # O armário precisa saber se o servidor está acordado
+    return JsonResponse({'status': 'online', 'sistema': 'Key Track IoT'})
