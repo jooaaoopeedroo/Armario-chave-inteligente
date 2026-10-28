@@ -3,3 +3,4 @@ Django==5.2.18
 sqlparse==0.6.0
 tzdata==2026.5
 psycopg2-binary
+python-.envs
